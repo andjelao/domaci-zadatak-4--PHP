@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Novogodišnje želje</title>
+</head>
+<body class="bg-light">
+    <div class="container col-8">
+        <h1 class = "text-center mt-4">Novogodišnje želje</h1>
+        <h5 class="text-center mt-4 text-primary">Pošaljite želju Deda Mrazu!</h5>
+        <div class="mt-5">
+        <form action="./sacuvaj_zelju.php" method="POST">
+            <label for="ime">Unesite ime:</label>
+            <input type="text" name="ime" id="ime" placeholder="Ime..." class="form-control mb-3">
+            <label for="prezime">Unesite prezime:</label>
+            <input type="text" name="prezime" id="prezime" placeholder="Prezime..." class="form-control mb-3">
+            <label for="grad">Izaberite grad:</label>
+            <select name="grad" id="grad" class="form-control mb-3">
+                <option value=""></option>
+                <option value="Podgorica">Podgorica</option>
+                <option value="Cetinje">Cetinje</option>
+                <option value="Niksic">Nikšić</option>
+                <option value="Bar">Bar</option>
+                <option value="Budva">Budva</option>
+                <option value="Bijelo Polje">Bijelo Polje</option>
+                <option value="Berane">Berane</option>
+                <option value="Zabljak">Žabljak</option>
+            </select>
+            <label for="zelja">Unesite želju:</label>
+            <textarea name="zelja" id="zelja" rows="4" cols="50" class="form-control mb-3" placeholder="Želja..."></textarea>
+            <label>Da li ste bili dobri ove godine?</label>
+            <label for="da">Da</label>
+            <input type="checkbox" name="odgovor" value="Da" id="da">
+            <button class="btn-primary ml-4">Pošalji</button>
+        </form></div>
+    </div>
+    
+</body>
+</html>
